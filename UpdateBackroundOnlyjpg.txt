@@ -1,0 +1,8 @@
+let userInput = prompt("Please enter the URL of an image (jpg or jpeg format):");
+
+if (userInput && userInput.endsWith(".jpg") || userInput.endsWith(".jpeg")) {
+  console.log(true);
+  document.body.style.backgroundImage = `url('${userInput}')`;
+} else {
+  console.log(false);
+}
